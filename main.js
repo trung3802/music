@@ -319,12 +319,13 @@ document.getElementById("repeat_btn").addEventListener("click", function () {
       console.log("Chế độ lặp lại tắt");
   }
 });
-
 let heartIcon = document.getElementById('yeuthich');
 
 heartIcon.addEventListener('click', function () {
     // Lấy chỉ mục của bài hát từ thuộc tính data-index hoặc bất kỳ cách nào bạn sử dụng để xác định bài hát
-    let songIndex = 0;  // Thay bằng cách lấy chỉ mục tương ứng với bài hát đang được chơi
+     // Lấy giá trị của phần tử có ID là 'song_name'
+     let songNameElement = document.getElementById('song_name');
+     let songIndex = songNameElement.innerText; 
 
     // Kiểm tra xem bài hát đã có trong danh sách yêu thích chưa
     let isFavorite = favorites.some(item => item === songIndex);
@@ -349,5 +350,14 @@ heartIcon.addEventListener('click', function () {
     localStorage.setItem('favorites', JSON.stringify(favorites));
 });
 
+
 // Tải danh sách yêu thích từ localStorage
 let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+
+function change_volume() {
+  let audio = document.getElementById('music'); // Update this ID based on your audio element
+  let volumeSlider = document.getElementById('volume_slider');
+
+  audio.volume = volumeSlider.value / 100;
+}
