@@ -4,56 +4,43 @@ let All_song = [
     name: "1", // tên bài hát
     path: "music/1.mp3",  // file mp3 em tải xuống
     img: "images/1.jpg",    // ảnh bài hát or ca sĩ
-    singer: "Sơn Tùng",  // tên ca sĩ
-    music:"cơn mưa ngang qua"
+    singer: "Sơn tùng",   
+    music:"Nắng ấm xa dần"
   },
   {
     name: "2",
     path: "music/2.mp3",
     img: "images/2.jpg",
-    singer: "Sơn Tùng",  // tên ca sĩ
-    music:"cơn mưa ngang qua"
+    singer: "Sơn tùng",   
+    music:"Nắng ấm xa dần"
   },
   {
     name: "3",
     path: "music/3.mp3",
     img: "images/3.jpg",
-    singer: "Sơn Tùng",  // tên ca sĩ
-    music:"cơn mưa ngang qua"
+    singer: "Sơn tùng",   
+    music:"Nắng ấm xa dần"
   },
   {
     name: "4",
     path: "music/4.mp3",
     img: "images/4.jpg",
-    singer: "Sơn Tùng",  // tên ca sĩ
-    music:"cơn mưa ngang qua"
+    singer: "Sơn tùng",   
+    music:"Nắng ấm xa dần"
   },
   {
     name: "5",
     path: "music/5.mp3",
     img: "images/5.jpg",
-    singer: "Sơn Tùng",  // tên ca sĩ
-    music:"cơn mưa ngang qua"
+    singer: "Sơn tùng",   
+    music:"Nắng ấm xa dần"
   },
   {
    name: "6",
    path: "music/6.mp3",
    img: "images/1.jpg",
-   singer: "Sơn Tùng",  // tên ca sĩ
-    music:"cơn mưa ngang qua"
-  },{
-    name: "1",
-    path: "music/1.mp3",
-    img: "images/1.jpg",
-    singer: "Sơn Tùng",  // tên ca sĩ
-    music:"cơn mưa ngang qua"
-  },
-  {
-    name: "2",
-    path: "music/2.mp3",
-    img: "images/2.jpg",
-    singer: "Sơn Tùng",  // tên ca sĩ
-    music:"cơn mưa ngang qua"
+   singer: "Sơn tùng",   
+    music:"Nắng ấm xa dần"
   }
 ];
 let tracks = document.querySelector('.tracks');

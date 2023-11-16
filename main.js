@@ -332,15 +332,15 @@ heartIcon.addEventListener('click', function () {
 
     if (!isFavorite) {
         // Nếu bài hát chưa có trong danh sách yêu thích, thêm vào
-        favorites.push(songIndex-1);
-        console.log('Đã thêm vào yêu thích:', All_song[songIndex -1].name);
+        favorites.push(songIndex);
+        console.log('Đã thêm vào yêu thích:', All_song[songIndex-1].name);
 
         // Hiển thị bài hát yêu thích trên trang web
         updateFavoritesDisplay();
     } else {
         // Nếu bài hát đã có trong danh sách yêu thích, xóa khỏi danh sách
-        favorites = favorites.filter(item => item !== songIndex-1);
-        console.log('Đã xóa khỏi yêu thích:', All_song[songIndex -1].name);
+        favorites = favorites.filter(item => item !== songIndex);
+        console.log('Đã xóa khỏi yêu thích:', All_song[songIndex-1].name);
 
         // Cập nhật lại hiển thị danh sách yêu thích trên trang web
         updateFavoritesDisplay();
