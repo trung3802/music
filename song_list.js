@@ -4,72 +4,56 @@ let All_song = [
     name: "1", // tên bài hát
     path: "music/1.mp3",  // file mp3 em tải xuống
     img: "images/1.jpg",    // ảnh bài hát or ca sĩ
-    singer: "NoCopyrightSounds [NCS]"   // tên ca sĩ
+    singer: "Sơn Tùng",  // tên ca sĩ
+    music:"cơn mưa ngang qua"
   },
   {
     name: "2",
     path: "music/2.mp3",
     img: "images/2.jpg",
-    singer: "NoCopyrightSounds"
+    singer: "Sơn Tùng",  // tên ca sĩ
+    music:"cơn mưa ngang qua"
   },
   {
     name: "3",
     path: "music/3.mp3",
     img: "images/3.jpg",
-    singer: "Audio Library"
+    singer: "Sơn Tùng",  // tên ca sĩ
+    music:"cơn mưa ngang qua"
   },
   {
     name: "4",
     path: "music/4.mp3",
     img: "images/4.jpg",
-    singer: "imshahed"
+    singer: "Sơn Tùng",  // tên ca sĩ
+    music:"cơn mưa ngang qua"
   },
   {
     name: "5",
     path: "music/5.mp3",
     img: "images/5.jpg",
-    singer: "NoCopyrightSounds"
+    singer: "Sơn Tùng",  // tên ca sĩ
+    music:"cơn mưa ngang qua"
   },
   {
    name: "6",
    path: "music/6.mp3",
    img: "images/1.jpg",
-   singer: "Magic Free Release"
+   singer: "Sơn Tùng",  // tên ca sĩ
+    music:"cơn mưa ngang qua"
   },{
     name: "1",
     path: "music/1.mp3",
     img: "images/1.jpg",
-    singer: "NoCopyrightSounds [NCS]"
+    singer: "Sơn Tùng",  // tên ca sĩ
+    music:"cơn mưa ngang qua"
   },
   {
     name: "2",
     path: "music/2.mp3",
     img: "images/2.jpg",
-    singer: "NoCopyrightSounds"
-  },
-  {
-    name: "3",
-    path: "music/3.mp3",
-    img: "images/3.jpg",
-    singer: "Audio Library"
-  },
-  {
-    name: "4",
-    path: "music/4.mp3",
-    img: "images/4.jpg",
-    singer: "imshahed"
-  },
-  {
-    name: "5",
-    path: "music/5.mp3",
-    img: "images/5.jpg",
-    singer: "NoCopyrightSounds"
-  },
-  {
-   name: "6",
-   path: "music/6.mp3",
-   img: "images/1.jpg",
-   singer: "Magic Free Release"
+    singer: "Sơn Tùng",  // tên ca sĩ
+    music:"cơn mưa ngang qua"
   }
 ];
 let tracks = document.querySelector('.tracks');
@@ -84,6 +68,7 @@ for (let i = 0; i < All_song.length; i++) {
      <div class="song_info">
         <p id="title">${All_song[i].name}</p>
         <p>${All_song[i].singer}</p>
+        <p>${All_song[i].music}</p>
      </div>
      <button id="play_btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
      </div>
@@ -107,6 +92,7 @@ searchInput.addEventListener('input', function() {
                    <div class="song_info">
                        <p id="title">${filteredSongs[i].name}</p>
                        <p>${filteredSongs[i].singer}</p>
+                       <p>${filteredSongs[i].music}</p>
                    </div>
                  <button id="play_btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
                </div>

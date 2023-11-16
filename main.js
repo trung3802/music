@@ -325,22 +325,22 @@ heartIcon.addEventListener('click', function () {
     // Lấy chỉ mục của bài hát từ thuộc tính data-index hoặc bất kỳ cách nào bạn sử dụng để xác định bài hát
      // Lấy giá trị của phần tử có ID là 'song_name'
      let songNameElement = document.getElementById('song_name');
-     let songIndex = songNameElement.innerText; 
+     let songIndex= songNameElement.innerText; 
 
     // Kiểm tra xem bài hát đã có trong danh sách yêu thích chưa
     let isFavorite = favorites.some(item => item === songIndex);
 
     if (!isFavorite) {
         // Nếu bài hát chưa có trong danh sách yêu thích, thêm vào
-        favorites.push(songIndex);
-        console.log('Đã thêm vào yêu thích:', All_song[songIndex].name);
+        favorites.push(songIndex-1);
+        console.log('Đã thêm vào yêu thích:', All_song[songIndex -1].name);
 
         // Hiển thị bài hát yêu thích trên trang web
         updateFavoritesDisplay();
     } else {
         // Nếu bài hát đã có trong danh sách yêu thích, xóa khỏi danh sách
-        favorites = favorites.filter(item => item !== songIndex);
-        console.log('Đã xóa khỏi yêu thích:', All_song[songIndex].name);
+        favorites = favorites.filter(item => item !== songIndex-1);
+        console.log('Đã xóa khỏi yêu thích:', All_song[songIndex -1].name);
 
         // Cập nhật lại hiển thị danh sách yêu thích trên trang web
         updateFavoritesDisplay();

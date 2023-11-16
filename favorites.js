@@ -4,9 +4,7 @@ function updateFavoritesDisplay() {
     favoritesList.innerHTML = '';
     favorites.forEach(songIndex => {
         let favoriteHtml = `
-                <div>
-                    <p>Favorites</p>
-                </div>
+                
             <div class="song">
                 
                 <div class="img">
@@ -17,6 +15,7 @@ function updateFavoritesDisplay() {
                     <div class="song_info">
                         <p id="title">${All_song[songIndex].name}</p>
                         <p>${All_song[songIndex].singer}</p>
+                        <p>${All_song[songIndex].music}</p>
                     </div>
                     
                 </div>
