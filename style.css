@@ -407,3 +407,76 @@ input[type=range]::-webkit-slider-thumb {
 
 
 /*Dev Ideas*/
+/* Thêm và Xoá button */
+.add-song,
+.delete-song {
+  background-color: #4caf50; /* Màu nền xanh lá cây */
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-song:hover,
+.delete-song:hover {
+  background-color: #45a049; /* Màu nền xanh lá cây khi di chuột qua */
+}
+
+/* Dropdown */
+.album-dropdown {
+  display: inline-block;
+}
+
+.album-select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Chọn Album label */
+label {
+  margin-right: 10px;
+}
+
+/* Container của bài hát */
+.album-container {
+  margin-bottom: 20px;
+}
+
+/* Container của các album */
+.tracks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Container của mỗi bài hát */
+.song {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/* Ảnh của bài hát */
+.img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Nội dung chi tiết của bài hát */
+.more {
+  display: flex;
+  align-items: center;
+}
+
+/* Thông tin bài hát */
+.song_info {
+  margin-right: 10px;
+}
+
+/* Nguồn nhạc */
+audio {
+  display: none;
+}
